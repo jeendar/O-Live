@@ -1,0 +1,23 @@
+
+<ons-page>
+  <ons-toolbar>
+    <div class="center">Create an account </div>
+  </ons-toolbar>
+  <div class="background"></div>
+  <div class="content">
+    <div style="text-align: center; margin: 10px;">
+      Register with  <ons-fab style="background-color:red; color:white;" (click)="tryGoogleLogin()">
+        <ons-icon icon="md-google"></ons-icon>
+      </ons-fab>
+    </div>
+    <div style="text-align: center; margin: 10px;">
+      Register with  <ons-fab style="background-color:blue;color:white;"(click)="tryFacebookLogin()">
+        <ons-icon icon="md-facebook"></ons-icon>
+      </ons-fab>
+    </div>
+     <div style="text-align: center; margin: 10px;">
+      Already have an account? <a href="/login">Login</a>
+    </div>
+
+  </div>
+</ons-page>

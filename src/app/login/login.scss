@@ -1,0 +1,55 @@
+.header{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+.error{
+  color: red;
+}
+
+
+.socialLogin {
+  margin: 50px;
+  width: 100%;
+
+
+}
+.facebook{
+  background-color: #3b5998;
+
+}
+.google{
+  background-color: #d13d35;
+}
+
+.container-logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  img {
+    max-width: 250px;
+  }
+}
+.form-bottom-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+.form-bottom-text label,
+a {
+  color: white;
+}
+.background{
+  background-image: url('../../assets/imgs/_bg.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center center;
+}

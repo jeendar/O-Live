@@ -20,7 +20,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              ["src/assets"]
             ],
             "styles": [
               "node_modules/onsenui/css/onsenui.css",
@@ -87,7 +87,7 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              ["src/assets"]
             ]
           }
         },
