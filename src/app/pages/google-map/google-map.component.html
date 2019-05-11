@@ -1,0 +1,22 @@
+<ons-toolbar>
+  <div class="center">Map</div>
+  <div class="right">
+    <ons-toolbar-button (click)="logout()">
+      Logout
+    </ons-toolbar-button>
+  </div>
+</ons-toolbar>
+
+<div *ngIf="lat && lng">
+
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng">
+
+      <agm-info-window>
+        <p>You are here!</p>
+      </agm-info-window>
+
+    </agm-marker>
+  </agm-map>
+
+<div>

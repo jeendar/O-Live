@@ -1,0 +1,63 @@
+.header{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+.error{
+  color: red;
+}
+
+.success{
+  color: green;
+}
+
+
+.socialLogin {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+
+}
+.facebook{
+  background-color: #3b5998;
+
+}
+.google{
+  background-color: #d13d35;
+}
+
+.container-logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+  img {
+    max-width: 250px;
+  }
+}
+.form-bottom-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.form-bottom-text label,
+a {
+  color: white;
+}
+.background{
+  background-image: url('../../../assets/imgs/bg2.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center center;
+  background-size: cover;
+}
