@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy} from '@angular/core';
 //import { GeoService } from '../geo.service';
 import { Location } from '@angular/common';
 import { AuthService } from '../../core/auth.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-google-map',
@@ -18,6 +20,8 @@ export class GoogleMapComponent implements OnInit, OnDestroy {
 
   constructor(
     private location : Location,
+    private route: ActivatedRoute,
+    private router: Router,
     public authService: AuthService
     ) { } //private geo: GeoService
 
@@ -53,6 +57,11 @@ export class GoogleMapComponent implements OnInit, OnDestroy {
     }, (error) => {
       console.log("Logout error", error);
     });
+  }
+  
+  goToProfile(){
+    console.log("Profile");
+    this.router.navigate(['/user']);
   }
 
 }

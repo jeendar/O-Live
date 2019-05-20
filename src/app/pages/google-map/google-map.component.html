@@ -1,11 +1,21 @@
 <ons-toolbar>
-  <div class="center">Map</div>
+  <div class="left">
+    <ons-toolbar-button active>
+      Map
+    </ons-toolbar-button>
+  </div>
+  <div class="center">
+    <ons-toolbar-button (click)="goToProfile()">
+      Profile
+    </ons-toolbar-button>
+  </div>
   <div class="right">
     <ons-toolbar-button (click)="logout()">
       Logout
     </ons-toolbar-button>
   </div>
 </ons-toolbar>
+
 
 <div *ngIf="lat && lng">
 

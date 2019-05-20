@@ -1,7 +1,6 @@
 .header{
   text-align: center;
   font-size: 30px;
-  margin-bottom: 40px;
 }
 
 .row{
@@ -12,14 +11,30 @@
   color: red;
 }
 
-.socialLogin {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
 
-
+.lbl{
+  font-size:16px;
+  color:#555;
+  text-align:center;
+  margin:10px 0 20px 0;
 }
+
+.socialLogin {
+  margin: 50px 0;
+  width: 95%;
+}
+.form1{
+  width:90%;
+  margin:auto;
+}
+.form-group{
+  margin: 10px auto ;
+  padding:3px 10px ;
+  background-color:#fff;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
 .facebook{
   background-color: #3b5998;
 
@@ -32,27 +47,18 @@
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
-
   img {
-    max-width: 350px;
+    max-width: 250px;
   }
 }
 .form-bottom-text {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top:10px;
 }
 .form-bottom-text label,
 a {
-  color: white;
+  color: #777;
 }
-.background{
-  background-image: url('../../../assets/imgs/_bg.jpg');
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:center center;
-  background-size: cover;
-}
+

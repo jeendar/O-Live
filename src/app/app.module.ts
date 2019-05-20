@@ -5,7 +5,6 @@ import { OnsenModule } from 'ngx-onsenui';
 
 
 import { AppComponent } from './app.component';
-import { OnsenTestComponent } from './onsen-test/onsen-test.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { LoginComponent } from './pages/login/login.component';
@@ -39,7 +38,6 @@ import { GoogleMapComponent } from './pages/google-map/google-map.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OnsenTestComponent,
     LoginComponent,
     RegisterComponent,
     UserComponent,
