@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-google-map',
+  selector: 'ons-page[app-google-map]',
   templateUrl: './google-map.component.html',
   styleUrls: ['./google-map.component.css']
 })
@@ -32,7 +32,7 @@ export class GoogleMapComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    // this.subscription.unsubscribe() 
+    // this.subscription.unsubscribe()
   }
 
   private getUserLocation() {
@@ -42,9 +42,12 @@ export class GoogleMapComponent implements OnInit, OnDestroy {
         this.lat = position.coords.latitude;
         this.lng = position.coords.longitude;
 
-        console.log(this.lat);
-        console.log(this.lng);
-        
+        //this.lat = 34.0419777;
+        //this.lng = -4.9888921;
+
+        //console.log(this.lat);
+        //console.log(this.lng);
+
       //  this.geo.getLocations(100, [this.lat, this.lng]);
       });
     }
@@ -58,10 +61,10 @@ export class GoogleMapComponent implements OnInit, OnDestroy {
       console.log("Logout error", error);
     });
   }
-  
+
   goToProfile(){
     console.log("Profile");
-    this.router.navigate(['/user']);
+    this.router.navigate(['/tabs']);
   }
 
 }

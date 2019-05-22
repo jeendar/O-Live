@@ -3,41 +3,42 @@
     <div class="center"> Login </div>
   </ons-toolbar>
   <div class="content">
- <div class="card">
+    <div class="card">
 
-    <div class="container-logo">
-      <img src="./../../assets/imgs/logo.png" height="110px" width="200px" />
-    </div>
-
-    <form [formGroup]="loginForm" class="form1">
-      <div class="form-group">
-        <div>
-          <ons-input type="email" formControlName="email" class="form-control" placeholder="Type your e-mail here" ></ons-input></div>
+      <div class="container-logo">
+        <img src="./../../assets/imgs/logo.png" height="110px" width="200px" />
       </div>
-      <div class="form-group">
-        <div><ons-input  type="password" class="form-control" formControlName="password" placeholder="Type password here"></ons-input></div>
-        <label class="error">{{errorMessage}}</label>
-      </div>
-
-      <div style="text-align:center; ">
-          <ons-button type="submit" (click)="tryLogin(loginForm.value)" class="btn btn-yellow">Sign in</ons-button>
+  
+      <form [formGroup]="loginForm" class="form1">
+        <div class="form-group">
+          <div>
+            <ons-input type="email" formControlName="email" class="form-control" placeholder="Type your e-mail here" ></ons-input></div>
         </div>
-    </form>
-
-    <div class="lbl">
-        - OR -
+        <div class="form-group">
+          <div><ons-input  type="password" class="form-control" formControlName="password" placeholder="Type password here"></ons-input></div>
+          <label class="error">{{errorMessage}}</label>
+        </div>
+  
+        
+        <ons-button modifier="large" type="submit" class="login-button"  (click)="tryLogin(loginForm.value)">Log In</ons-button>
+        <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>
+  
+      </form>
+  
+      <div class="lbl">
+          - OR -
+        </div>
+  
+      <div class="socialLogin"style="text-align: center; margin: 10px;">
+        <ons-button   modifier="large" full class="google" (click)="tryGoogleLogin()" ><ons-icon  icon="md-google" style="margin-right: 12px;"></ons-icon> Sign in with Google   </ons-button >
       </div>
-
-    <div class="socialLogin"style="text-align: center; margin: 10px;">
-      <ons-button  full class="google" (click)="tryGoogleLogin()" ><ons-icon  icon="md-google" style="margin-right: 12px;"></ons-icon> Sign in with Google   </ons-button >
-    </div>
-    <div class="socialLogin"style="text-align: center; margin: 10px;">
-      <ons-button  full class="facebook" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon>Sign in with Facebook</ons-button >
-    </div>
-    <div padding text-center class="form-bottom-text">
-        <label>Don't have an Account? <a  href="/register">Sign up</a></label>
-    </div>
-  </div>    
+      <div class="socialLogin"style="text-align: center; margin: 10px;">
+        <ons-button   modifier="large" full class="facebook" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon>Sign in with Facebook</ons-button >
+      </div>
+      <div padding text-center class="form-bottom-text">
+          <label>Don't have an Account? <a  href="/register">Sign up</a></label>
+      </div>
+    </div>     
 
 
   </div>

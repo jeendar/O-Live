@@ -1,46 +1,76 @@
-<ons-toolbar>
-  <div class="left">
-    <ons-toolbar-button (click)="goToMap()">
-      Map
-    </ons-toolbar-button>
-  </div>
-  <div class="center">
-    <ons-toolbar-button>
-      Profile
-    </ons-toolbar-button>
-  </div>
-  <div class="right">
-    <ons-toolbar-button (click)="logout()">
-      Logout
-    </ons-toolbar-button>
-  </div>
-</ons-toolbar>
-<!-- <h1 class="header">Profile</h1> -->
+
 <ons-page>
-
-<h1 class="header">Logged User Page</h1>
-<div class="row">
-  <div class="col-md-4 col-md-offset-4">
-    <div class="card">
-      <img class="card-img-top image" [src]="user.image" *ngIf="user.image" alt="User image">
-      <img class="card-img-top image" src="https://via.placeholder.com/400x300" *ngIf="!user.image" alt="User image">
+  <ons-toolbar>
+    <div class="center">Profile</div>
+  </ons-toolbar>
+  <div class="background"></div>
+  <div class="content" class="initial-page">
+    <div class="profile-card"> 
+      <img class="profile-image" [src]="user.image" *ngIf="user.image" alt="User image">
+      <img class="profile-image" src="https://via.placeholder.com/400x300" *ngIf="!user.image" alt="User image">
       <div *ngIf='user.provider != "password"'class="card-body">
-        <h4 class="card-title">{{user.name}}</h4>
-        <p class="card-text">This is an example of Social Authentication using Firebase in an Angular 7 web app. </p>
-      </div>
-
-      <div *ngIf='user.provider == "password"'class="card-body">
-        <form [formGroup]="profileForm">
-          <div class="form-group">
-            <label>Your name : </label>
-            <ons-input type="text" formControlName="name" class="form-control" required></ons-input>
-
-          </div>
-        </form>
-        <ons-button (click)="save(profileForm.value)" class="btn btn-primary">Save</ons-button>
-      </div>
-    </div>
+        <div class="profile-name">{{user.name}}</div>
+        <div class="profile-id">@esmail</div>
+        <div class="profile-desc">Freelance designer, MEAN stack developer</div>
+     </div>
   </div>
-</div>
+  
+ 
+ <div *ngIf='user.provider == "password"'class="card-body">
+    <form [formGroup]="profileForm">
+      <div class="form-group">
+        <label>Your name : </label>
+        <ons-input type="text" formControlName="name" class="form-control" required></ons-input>
 
-</ons-page>
+      </div>
+    </form>
+    <ons-button (click)="save(profileForm.value)" class="btn btn-primary">Save</ons-button>
+  </div>
+
+  <ons-list>
+      <ons-list-item modifier="chevron tappable" ng-click="myNavTab3.pushPage('profile.html')">
+          <div class="list__item__left">
+              <ons-icon icon="ion-person" size="20px"></ons-icon>
+          </div>
+          <div class="list__item__center">Profile </div>
+      </ons-list-item>
+      <ons-list-item modifier="chevron tappable" (click)="goToMap()">
+        <div class="list__item__left">
+            <ons-icon icon="ion-map" size="20px"></ons-icon>
+        </div>
+        <div class="list__item__center">Search on the map </div>
+    </ons-list-item>
+      <ons-list-item modifier="chevron tappable">
+          <div class="list__item__left">
+              <ons-icon icon="ion-stats-bars" size="20px"></ons-icon>
+          </div>
+          <div class="list__item__center">Go Live!</div>
+      </ons-list-item>
+      <ons-list-item modifier="chevron tappable">
+          <div class="list__item__left">
+              <ons-icon icon="ion-play" size="20px"></ons-icon>
+          </div>
+          <div class="list__item__center">Saved Videos </div>
+      </ons-list-item>
+      <ons-list-item modifier="chevron tappable">
+        <div class="list__item__left">
+            <ons-icon icon="ion-person" size="20px"></ons-icon>
+        </div>
+        <div class="list__item__center">Friends List </div>
+    </ons-list-item>
+    <ons-list-item modifier="chevron tappable">
+      <div class="list__item__left">
+          <ons-icon icon="ion-settings" size="20px"></ons-icon>
+      </div>
+      <div class="list__item__center">Settings </div>
+  </ons-list-item>
+  <ons-list-item modifier="chevron tappable">
+          <div class="list__item__left">
+              <ons-icon icon="ion-log-out" size="20px"></ons-icon>
+          </div>
+          <div class="list__item__center" ><a (click)="logout()">Log out</a></div>
+      </ons-list-item>
+  </ons-list>
+  </div>
+  </ons-page>
+

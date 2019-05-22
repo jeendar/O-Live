@@ -1,0 +1,12 @@
+<ons-toolbar>
+  <div class="center">Second</div>
+</ons-toolbar>
+<div class="background"></div>
+<div class="content">
+  <ons-button (click)="takePic()">Take Picture</ons-button>
+  <br>
+  <br>
+  <br>
+  <ons-button (click)="pop()">Pop</ons-button>
+  <img *ngIf="base64Image!=null" alt="" [src]="base64Image" height="500" width="500"/>
+</div>

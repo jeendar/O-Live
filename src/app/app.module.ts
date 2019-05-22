@@ -32,6 +32,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
+import { FirstPageComponentComponent } from './pages/first-page-component/first-page-component.component';
+import { SecondPageComponent } from './pages/second-page/second-page.component';
+import { Tab1Component } from './tab1/tab1.component';
+import { Tab2Component } from './tab2/tab2.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { AcceuilComponent } from './pages/acceuil/acceuil.component';
+import { NotifComponent } from './pages/notif/notif.component';
 
 
 
@@ -42,7 +49,16 @@ import { GoogleMapComponent } from './pages/google-map/google-map.component';
     RegisterComponent,
     UserComponent,
     GoogleMapComponent,
+    FirstPageComponentComponent,
+    SecondPageComponent,
+    Tab1Component,
+    Tab2Component,
+    TabsComponent,
+    AcceuilComponent,
+    NotifComponent,
   ],
+
+
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -52,7 +68,7 @@ import { GoogleMapComponent } from './pages/google-map/google-map.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
-    
+
     AgmCoreModule.forRoot({
       apiKey: environment.googleMapsKey
     })
@@ -62,6 +78,8 @@ import { GoogleMapComponent } from './pages/google-map/google-map.component';
     CUSTOM_ELEMENTS_SCHEMA,
   ],
   bootstrap: [AppComponent],
+  entryComponents: [Tab1Component, Tab2Component, NotifComponent],
 })
 export class AppModule { }
 
+platformBrowserDynamic().bootstrapModule(AppModule);

@@ -11,3 +11,76 @@
 .image {
   width: 100%
 }
+
+
+.profile-card {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+  line-height: 1.4;
+  background-color: #33393c;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+}
+
+.profile-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: black;
+  border :1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+.myInput {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 8x;
+  font-size: 16px;
+  
+}
+
+.wrapper {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 0;
+}
+
+.profile-name {
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+.list-item-container {
+    line-height: 2;
+    padding-top: 5px;
+    /*15px 0px 15px 15px; */
+}
+
+.list-item-wrapper {
+  line-height: 6;
+}
+
+.list__item__left{
+  margin-right:5px;
+  }
+
+.profile-id {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.profile-desc {
+  font-size: 15px;
+  opacity: 0.6;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "mql.gl.grpe"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "mql.gl.grpe"
+    },
+    "cordova-rtsp-rtmp-stream": {
+      "PACKAGE_NAME": "mql.gl.grpe"
+    }
+  },
+  "dependent_plugins": {}
+}

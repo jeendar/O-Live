@@ -1,0 +1,72 @@
+{
+  "_from": "cordova-rtsp-rtmp-stream",
+  "_id": "cordova-rtsp-rtmp-stream@0.1.24",
+  "_inBundle": false,
+  "_integrity": "sha512-typARYXLlc+SGj/i5MklOGfmbjqVkBZTfbkdDO7o/Jc2GvmApzERPHMCJ3eWqQXWRCWwgs4dKAt0S6g7DlwUgQ==",
+  "_location": "/cordova-rtsp-rtmp-stream",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-rtsp-rtmp-stream",
+    "name": "cordova-rtsp-rtmp-stream",
+    "escapedName": "cordova-rtsp-rtmp-stream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-rtsp-rtmp-stream/-/cordova-rtsp-rtmp-stream-0.1.24.tgz",
+  "_shasum": "6db22c2cc33898bf8a378e1faa9ca3273b9fac5b",
+  "_spec": "cordova-rtsp-rtmp-stream",
+  "_where": "C:\\Users\\THINK PAD T460\\Desktop\\genie logiciel\\onsen\\testApp\\eventsMobApp",
+  "author": {
+    "name": "Archie Disono"
+  },
+  "bugs": {
+    "url": "https://github.com/disono/cordova-rtmp-rtsp-stream"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-rtsp-rtmp-stream",
+    "platforms": [
+      "android"
+    ]
+  },
+  "cordova_name": "Cordova RTMP and RTSP Live Streamer for Android",
+  "deprecated": false,
+  "description": "Cross-platform plugin for Cordova / PhoneGap to to easily stream RTSP or RTMP. Available for Android ONLY.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/disono/cordova-rtmp-rtsp-stream/blob/master/README.md",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "rtsp",
+    "rtmp",
+    "stream",
+    "video-stream",
+    "rtsp",
+    "cordova-android",
+    "ionic-rtmp",
+    "ionic-rtsp",
+    "android-rtmp",
+    "android-rtsp",
+    "cordova-live-stream",
+    "live-stream"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-rtsp-rtmp-stream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disono/cordova-rtmp-rtsp-stream.git"
+  },
+  "version": "0.1.24"
+}

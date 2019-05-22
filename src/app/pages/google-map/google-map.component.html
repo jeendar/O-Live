@@ -1,32 +1,24 @@
-<ons-toolbar>
-  <div class="left">
-    <ons-toolbar-button active>
-      Map
-    </ons-toolbar-button>
+<ons-page>
+  <ons-toolbar>
+    <div class="center">Carte</div>
+  </ons-toolbar>
+  <div class="background"></div>
+  <div class="content" class="initial-page">
+    <div *ngIf="lat && lng">
+
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng">
+
+          <agm-info-window>
+            <p>You are here!</p>
+          </agm-info-window>
+
+        </agm-marker>
+      </agm-map>
+
+    </div>
   </div>
-  <div class="center">
-    <ons-toolbar-button (click)="goToProfile()">
-      Profile
-    </ons-toolbar-button>
-  </div>
-  <div class="right">
-    <ons-toolbar-button (click)="logout()">
-      Logout
-    </ons-toolbar-button>
-  </div>
-</ons-toolbar>
+  </ons-page>
 
 
-<div *ngIf="lat && lng">
 
-  <agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng">
-
-      <agm-info-window>
-        <p>You are here!</p>
-      </agm-info-window>
-
-    </agm-marker>
-  </agm-map>
-
-<div>

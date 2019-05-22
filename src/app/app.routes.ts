@@ -6,6 +6,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { UserResolver } from './pages/user/user.resolver';
 import { AuthGuard } from './core/auth.guard';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
+import { FirstPageComponentComponent } from './pages/first-page-component/first-page-component.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 export const rootRouterConfig: Routes = [
@@ -13,5 +15,7 @@ export const rootRouterConfig: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
   { path: 'register', component: RegisterComponent, canActivate: [AuthGuard] },
   { path: 'user', component: UserComponent,  resolve: { data: UserResolver}},
-  { path: 'map', component: GoogleMapComponent}
+  { path: 'map', component: GoogleMapComponent},
+  { path: 'tabs', component: TabsComponent,  resolve: { data: UserResolver}},
+ 
 ];
