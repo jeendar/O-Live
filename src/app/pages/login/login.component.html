@@ -6,7 +6,7 @@
     <div class="card">
 
       <div class="container-logo">
-        <img src="./../../assets/imgs/logo.png" height="110px" width="200px" />
+        <img src="../../../assets/imgs/logo.png" height="110px" width="200px" />
       </div>
   
       <form [formGroup]="loginForm" class="form1">
@@ -36,7 +36,7 @@
         <ons-button   modifier="large" full class="facebook" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon>Sign in with Facebook</ons-button >
       </div>
       <div padding text-center class="form-bottom-text">
-          <label>Don't have an Account? <a  href="/register">Sign up</a></label>
+          <label>Don't have an Account? <a routerLink="/register">Sign up</a></label>
       </div>
     </div>     
 

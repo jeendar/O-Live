@@ -15,7 +15,7 @@ export const rootRouterConfig: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
   { path: 'register', component: RegisterComponent, canActivate: [AuthGuard] },
   { path: 'user', component: UserComponent,  resolve: { data: UserResolver}},
-  { path: 'map', component: GoogleMapComponent},
+  { path: 'map', component: GoogleMapComponent, resolve: { data: UserResolver}},
   { path: 'tabs', component: TabsComponent,  resolve: { data: UserResolver}},
  
 ];

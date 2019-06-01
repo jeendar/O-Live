@@ -12,7 +12,7 @@ export class LoginComponent {
 
   loginForm: FormGroup;
   errorMessage: string = '';
-  localpath = '../../../assets/logofinal.png';
+  
 
   constructor(
     public authService: AuthService,

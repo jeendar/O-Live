@@ -7,6 +7,8 @@ import { OnsenModule } from 'ngx-onsenui';
 import { AppComponent } from './app.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { LoginComponent } from './pages/login/login.component';
 
 
@@ -60,6 +62,7 @@ import { NotifComponent } from './pages/notif/notif.component';
 
 
   imports: [
+    HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
     AngularFirestoreModule,
