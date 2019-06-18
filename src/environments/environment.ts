@@ -13,7 +13,7 @@ export const environment = {
     messagingSenderId: "232561020745"
 
   },
-  googleMapsKey: 'AIzaSyDlJe79GK9TneKergO80KLPGVrwf6FbP4s',
+ // googleMapsKey: 'AIzaSyDlJe79GK9TneKergO80KLPGVrwf6FbP4s',
   MUX_TOKEN_ID: '10093d35-fa49-453d-b164-ae79de8bb173',
   MUX_TOKEN_SECRET: 'o0syGsVtIvy4GG5lnp4hzrdFEFTfcgFknXWjOSI3KylVzvVgrA8qfRoZ5lKj2kWNgwr4+xzv8X6'
 };

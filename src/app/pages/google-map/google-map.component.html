@@ -4,19 +4,7 @@
   </ons-toolbar>
   <div class="background"></div>
   <div class="content" class="initial-page">
-    <div *ngIf="lat && lng">
-
-      <agm-map [latitude]="lat" [longitude]="lng">
-        <agm-marker [latitude]="lat" [longitude]="lng">
-
-          <agm-info-window>
-            <p>You are here!</p>
-          </agm-info-window>
-
-        </agm-marker>
-      </agm-map>
-
-    </div>
+    <div class="map" #map></div>
   </div>
   </ons-page>
 

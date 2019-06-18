@@ -5,8 +5,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FirebaseUserModel } from '../../core/user.model';
-import { Tab1Component } from 'src/app/tab1/tab1.component';
-import { Tab2Component } from 'src/app/tab2/tab2.component';
 
 @Component({
   selector: 'ons-page[page-user]',

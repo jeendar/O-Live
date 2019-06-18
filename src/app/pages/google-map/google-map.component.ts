@@ -1,5 +1,7 @@
-import { Component, OnInit, OnDestroy} from '@angular/core';
-//import { GeoService } from '../geo.service';
+import { Component, AfterViewInit,  Renderer2,
+  ElementRef,
+  ViewChild} from '@angular/core';
+
 import { Location } from '@angular/common';
 import { AuthService } from '../../core/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,61 +12,89 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './google-map.component.html',
   styleUrls: ['./google-map.component.css']
 })
-export class GoogleMapComponent implements OnInit, OnDestroy {
-
-  lat: number;
-  lng: number;
-
+export class GoogleMapComponent implements  AfterViewInit {
+  @ViewChild("map") mapElementRef: ElementRef;
+ 
+  map : any;
   markers: any;
   subscription: any;
+  lat : number;
+  lng : number;
+  selectedCoords: any;
+  myLatLng : any;
 
   constructor(
     private location : Location,
     private route: ActivatedRoute,
     private router: Router,
-    public authService: AuthService
-    ) { } //private geo: GeoService
+    public authService: AuthService,
+    private renderer: Renderer2
+    ) { }
 
-  ngOnInit() {
-    this.getUserLocation();
-   /* this.subscription = this.geo.hits
-        .subscribe(hits => this.markers = hits); */
-  }
+    ngAfterViewInit() {
+      this.getGoogleMaps()
+        .then(googleMaps => {
+          const mapEl = this.mapElementRef.nativeElement;
 
-  ngOnDestroy() {
-    // this.subscription.unsubscribe()
-  }
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+              this.myLatLng = new googleMaps.LatLng( position.coords.latitude, position.coords.longitude);
+              
+              this.map = new googleMaps.Map(mapEl, {
+                center: this.myLatLng,
+                zoom: 15
+              });
+      
+              googleMaps.event.addListenerOnce(this.map, "idle", () => {
+                this.renderer.addClass(mapEl, "visible");
+              });
+      
+              this.map.addListener("click", event => {
+                this.selectedCoords = {
+                  lat: event.latLng.lat(),
+                  lng: event.latLng.lng()
+                };
+    
+                console.log("selectedCoords : " + this.selectedCoords.lat + " // " + this.selectedCoords.lng);
+              });
+    
+              this.markers = new googleMaps.Marker({
+                map: this.map,
+                draggable: false,
+                position: this.myLatLng
+              });
 
-  private getUserLocation() {
-    /// locate the user
-    if (navigator.geolocation) {
-       navigator.geolocation.getCurrentPosition(position => {
-        this.lat = position.coords.latitude;
-        this.lng = position.coords.longitude;
-
-        //this.lat = 34.0419777;
-        //this.lng = -4.9888921;
-
-        //console.log(this.lat);
-        //console.log(this.lng);
-
-      //  this.geo.getLocations(100, [this.lat, this.lng]);
+           });
+         }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }  
+    
+  
+    private getGoogleMaps(): Promise<any> {
+      const win = window as any;
+      const googleModule = win.google;
+      if (googleModule && googleModule.maps) {
+        return Promise.resolve(googleModule.maps);
+      }
+      return new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src =
+          "https://maps.googleapis.com/maps/api/js?key=AIzaSyDlJe79GK9TneKergO80KLPGVrwf6FbP4s";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+        script.onload = () => {
+          const loadedGoogleModule = win.google;
+          if (loadedGoogleModule && loadedGoogleModule.maps) {
+            resolve(loadedGoogleModule.maps);
+          } else {
+            reject("Google maps SDK not available.");
+          }
+        };
       });
     }
-  }
-
-  logout(){
-    this.authService.doLogout()
-    .then((res) => {
-      this.location.back();
-    }, (error) => {
-      console.log("Logout error", error);
-    });
-  }
-
-  goToProfile(){
-    console.log("Profile");
-    this.router.navigate(['/tabs']);
-  }
 
 }

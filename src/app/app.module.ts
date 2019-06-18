@@ -32,10 +32,8 @@ import { AuthService } from './core/auth.service';
 import { UserService } from './core/user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AgmCoreModule } from '@agm/core';
+//import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
-import { FirstPageComponentComponent } from './pages/first-page-component/first-page-component.component';
-import { SecondPageComponent } from './pages/second-page/second-page.component';
 import { Tab1Component } from './tab1/tab1.component';
 import { Tab2Component } from './tab2/tab2.component';
 import { TabsComponent } from './tabs/tabs.component';
@@ -51,13 +49,11 @@ import { NotifComponent } from './pages/notif/notif.component';
     RegisterComponent,
     UserComponent,
     GoogleMapComponent,
-    FirstPageComponentComponent,
-    SecondPageComponent,
     Tab1Component,
     Tab2Component,
     TabsComponent,
     AcceuilComponent,
-    NotifComponent,
+    NotifComponent
   ],
 
 
@@ -72,16 +68,16 @@ import { NotifComponent } from './pages/notif/notif.component';
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
 
-    AgmCoreModule.forRoot({
+   /* AgmCoreModule.forRoot({
       apiKey: environment.googleMapsKey
-    })
+    }) */
   ],
   providers: [AuthService, UserService, UserResolver, AuthGuard, { provide: FirestoreSettingsToken, useValue: {} }],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
   ],
   bootstrap: [AppComponent],
-  entryComponents: [Tab1Component, Tab2Component, NotifComponent],
+  entryComponents: [Tab1Component, Tab2Component, GoogleMapComponent, NotifComponent],
 })
 export class AppModule { }
 

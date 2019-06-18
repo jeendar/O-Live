@@ -37,6 +37,20 @@ module.exports = [
         "clobbers": [
             "window.videoStreamer"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -44,7 +58,9 @@ module.exports.metadata =
 {
     "cordova-plugin-camera": "4.0.3",
     "cordova-plugin-whitelist": "1.3.3",
-    "cordova-rtsp-rtmp-stream": "0.1.18"
+    "cordova-rtsp-rtmp-stream": "0.1.18",
+    "cordova-plugin-geolocation": "4.0.1",
+    "cordova-plugin-splashscreen": "5.0.2"
 }
 // BOTTOM OF METADATA
 });
