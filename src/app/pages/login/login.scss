@@ -20,8 +20,8 @@
 }
 
 .socialLogin {
-  margin: 50px 0;
-  width: 95%;
+  margin: 20px auto;
+  width: 90%;
 }
 .form1{
   width:90%;
@@ -29,10 +29,12 @@
 }
 .form-group{
   margin: 10px auto ;
-  padding:3px 10px ;
-  background-color:#fff;
-  border:1px solid #ddd;
-  border-radius:5px;
+}
+ 
+.npt{
+  width:100%;
+  font-size:14px;
+  margin:10px auto;
 }
 
 .facebook{
@@ -47,6 +49,7 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin:50px auto;
   img {
     max-width: 250px;
   }

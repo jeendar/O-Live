@@ -11,8 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { LoginComponent } from './pages/login/login.component';
 
-
-
 import { AngularFireModule } from '@angular/fire';
 //import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -34,8 +32,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
-import { FirstPageComponentComponent } from './pages/first-page-component/first-page-component.component';
-import { SecondPageComponent } from './pages/second-page/second-page.component';
 import { Tab1Component } from './tab1/tab1.component';
 import { Tab2Component } from './tab2/tab2.component';
 import { TabsComponent } from './tabs/tabs.component';
@@ -51,8 +47,6 @@ import { NotifComponent } from './pages/notif/notif.component';
     RegisterComponent,
     UserComponent,
     GoogleMapComponent,
-    FirstPageComponentComponent,
-    SecondPageComponent,
     Tab1Component,
     Tab2Component,
     TabsComponent,
@@ -65,7 +59,6 @@ import { NotifComponent } from './pages/notif/notif.component';
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
-    AngularFirestoreModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: false }),
     OnsenModule,
     AngularFireModule.initializeApp(environment.firebase),

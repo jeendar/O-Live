@@ -6,7 +6,6 @@ import { RegisterComponent } from './pages/register/register.component';
 import { UserResolver } from './pages/user/user.resolver';
 import { AuthGuard } from './core/auth.guard';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
-import { FirstPageComponentComponent } from './pages/first-page-component/first-page-component.component';
 import { TabsComponent } from './tabs/tabs.component';
 
 

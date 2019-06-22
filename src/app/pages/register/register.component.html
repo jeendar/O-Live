@@ -1,25 +1,25 @@
 
 <ons-page>
-  <ons-toolbar>
-    <div class="center">Sign up </div>
-  </ons-toolbar>
 
   <div class="background"></div>
   <div class="content">
+    <div class="container-logo">
+      <img src="../../../assets/imgs/logoFull.png" height="80px" width="200px" />
+   </div>
     <div class="card">
       <div style="text-align:center;">
-        <h1>Create your account</h1>
+        <h1>Sign up</h1>
       </div>
-      
-    <form [formGroup]="registerForm" class="form1">
       <div class="lbl">
-        <label>Please fill in the following form in order to create your O'Live account.</label>
-      </div>
+          <label>Please fill in the following form in order to create your O'Live account.</label>
+      </div>    
+    <form [formGroup]="registerForm" class="form1">
+
         <div class="form-group">
-          <ons-input type="email" formControlName="email" class="form-control" placeholder="Type your e-mail here" required></ons-input>
+          <ons-input type="email" formControlName="email" class="npt form-control" placeholder="Type your e-mail here" required></ons-input>
         </div>
         <div class="form-group">
-          <div><ons-input  type="password" class="form-control" formControlName="password" placeholder="Type password here" required></ons-input></div>
+          <div><ons-input  type="password" class="form-control npt" formControlName="password" placeholder="Type password here" required></ons-input></div>
           <label class="error">{{errorMessage}}</label>
           <label class="success">{{successMessage}}</label>
         </div>

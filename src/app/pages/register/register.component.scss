@@ -1,12 +1,17 @@
 .header{
   text-align: center;
   font-size: 30px;
-  margin-bottom: 40px;
 }
 
 .row{
   margin-top: 10px;
 }
+
+.error{
+  color: red;
+}
+
+
 .lbl{
   font-size:16px;
   color:#555;
@@ -14,45 +19,36 @@
   margin:10px 0 20px 0;
 }
 
-
-.error{
-  color: red;
+.socialLogin {
+  margin: 20px auto;
+  width: 90%;
 }
-
-.success{
-  color: green;
-}
-
 .form1{
   width:90%;
   margin:auto;
 }
 .form-group{
   margin: 10px auto ;
-  padding:3px 10px ;
-  background-color:#fff;
-  border:1px solid #ddd;
-  border-radius:5px;
 }
  
-.socialLogin {
-  margin: 30px auto;
-  width: 90%;
+.npt{
+  width:100%;
+  font-size:14px;
+  margin:10px auto;
 }
 
 .facebook{
   background-color: #3b5998;
+
 }
 .google{
   background-color: #d13d35;
 }
-
 .container-logo {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
-
+  margin:50px auto;
   img {
     max-width: 250px;
   }

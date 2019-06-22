@@ -1,14 +1,16 @@
 <ons-page class="main_pages"  id="camera-page">
-  <ons-toolbar>
-    <div class="center" id="toolbar-title">Diffusion</div>
+  <ons-toolbar style="background-color:#4483A0;border-color:#4483A0; color:#fff;">
+    <div class="center" id="toolbar-title">Broadcast</div>
   </ons-toolbar>
   <div class="background"></div>
   <div class="content" class="normal-page">
     <div style="text-align: center; margin: 10px">
         <div class="camera-view"><ons-icon class="camera-icon" icon="ion-android-camera"></ons-icon></div>
+        <ons-button modifier="large" type="submit" class="startbutton"  (click)="startStreaming()">Start Broadcasting Now!</ons-button>
+
     </div>
     <div>
-      <ons-button (click)="startStreaming()">Start Streaming !</ons-button>
+
     </div>
   </div>
 </ons-page>
