@@ -15,6 +15,12 @@
     },
     "cordova-rtsp-rtmp-stream": {
       "PACKAGE_NAME": "mql.gl.grpe"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "mql.gl.grpe"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "mql.gl.grpe"
     }
   },
   "dependent_plugins": {}
