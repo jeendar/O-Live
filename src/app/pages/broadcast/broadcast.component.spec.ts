@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AcceuilComponent } from './acceuil.component';
+import { BroadcastComponent } from './broadcast.component';
 
-describe('AcceuilComponent', () => {
-  let component: AcceuilComponent;
-  let fixture: ComponentFixture<AcceuilComponent>;
+describe('Tab2Component', () => {
+  let component: BroadcastComponent;
+  let fixture: ComponentFixture<BroadcastComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AcceuilComponent ]
+      declarations: [ BroadcastComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AcceuilComponent);
+    fixture = TestBed.createComponent(BroadcastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

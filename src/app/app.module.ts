@@ -32,10 +32,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
-import { Tab1Component } from './tab1/tab1.component';
-import { Tab2Component } from './tab2/tab2.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BroadcastComponent } from './pages/broadcast/broadcast.component';
 import { TabsComponent } from './tabs/tabs.component';
-import { AcceuilComponent } from './pages/acceuil/acceuil.component';
 import { NotifComponent } from './pages/notif/notif.component';
 
 
@@ -47,10 +46,9 @@ import { NotifComponent } from './pages/notif/notif.component';
     RegisterComponent,
     UserComponent,
     GoogleMapComponent,
-    Tab1Component,
-    Tab2Component,
+    HomeComponent,
+    BroadcastComponent,
     TabsComponent,
-    AcceuilComponent,
     NotifComponent,
   ],
 
@@ -74,7 +72,7 @@ import { NotifComponent } from './pages/notif/notif.component';
     CUSTOM_ELEMENTS_SCHEMA,
   ],
   bootstrap: [AppComponent],
-  entryComponents: [Tab1Component, Tab2Component, NotifComponent],
+  entryComponents: [HomeComponent, BroadcastComponent, NotifComponent],
 })
 export class AppModule { }
 

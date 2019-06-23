@@ -1,0 +1,35 @@
+<ons-page class="main_pages"  id="camera-page">
+  <ons-toolbar style="background-color:#4483A0;border-color:#4483A0; color:#fff;">
+    <div class="center" id="toolbar-title"  style="color:#fff; text-align: center;">Broadcast</div>
+  </ons-toolbar>
+  <div class="background"></div>
+  <div class="content" class="normal-page">
+    <div style="text-align: center; margin: 10px">
+        <div class="camera-view"><ons-icon class="camera-icon" icon="ion-android-camera"></ons-icon></div>
+        
+        <div style="text-align: left; ">
+          <h4 style="font-weight:normal;">Please select the category of the event that you are live broadcasting :</h4>          
+        </div>
+        <ons-select class="select"  modifier="material">
+          <select class="select-input">
+            <option>Select category</option>
+            <option>Arts, Music, Cinema</option>
+            <option>Social</option>
+            <option>Education, Conference</option>
+            <option>International News</option>
+            <option>National News</option>
+            <option>IT, Computer Science</option>
+            <option>Science, Space</option>
+            <option>Other</option>
+
+
+          </select>
+        </ons-select>
+        <ons-button modifier="large" type="submit" class="startbutton"  (click)="startStreaming()">Start Broadcasting Now!</ons-button>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+</ons-page>

@@ -9,10 +9,10 @@ import {
 
 @Component({
   selector: 'ons-page[app-tab1]',
-  templateUrl: './tab1.component.html',
-  styleUrls: ['./tab1.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class Tab1Component implements OnInit {
+export class HomeComponent implements OnInit {
 
   constructor() { }
 

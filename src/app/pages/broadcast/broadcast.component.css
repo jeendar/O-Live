@@ -1,0 +1,29 @@
+.camera-view {
+  width: 100%;
+  height: 100%;
+  margin-bottom:30px;
+  text-align: center;
+  background-color: hsl(0, 0%, 79%);
+  display: table;
+  padding:100px 0;
+}
+
+.camera-icon {
+  vertical-align: middle !important;
+  font-size: 100px;
+  opacity: 0.4;
+  display: table-cell;
+}
+
+
+.select{
+  width:95%;
+  background-color:#fff;
+  padding:10px;
+  margin:10px auto;
+}
+
+option:hover{
+  background-color:#4483A0;
+  color:#eee;
+}

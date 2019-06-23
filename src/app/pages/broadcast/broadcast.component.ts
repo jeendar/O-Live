@@ -4,10 +4,10 @@ import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'ons-page[app-tab2]',
-  templateUrl: './tab2.component.html',
-  styleUrls: ['./tab2.component.css']
+  templateUrl: './broadcast.component.html',
+  styleUrls: ['./broadcast.component.css']
 })
-export class Tab2Component implements OnInit {
+export class BroadcastComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
