@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tab2Component } from './broadcast.component';
+import { BroadcastComponent } from './../broadcast/broadcast.component';
 
 describe('Tab2Component', () => {
-  let component: Tab2Component;
-  let fixture: ComponentFixture<Tab2Component>;
+  let component: BroadcastComponent;
+  let fixture: ComponentFixture<BroadcastComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Tab2Component ]
+      declarations: [ BroadcastComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Tab2Component);
+    fixture = TestBed.createComponent(BroadcastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
