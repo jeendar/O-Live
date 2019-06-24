@@ -7,6 +7,7 @@ import { UserResolver } from './pages/user/user.resolver';
 import { AuthGuard } from './core/auth.guard';
 import { GoogleMapComponent } from './pages/google-map/google-map.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
 
 export const rootRouterConfig: Routes = [
@@ -16,5 +17,6 @@ export const rootRouterConfig: Routes = [
   { path: 'user', component: UserComponent,  resolve: { data: UserResolver}},
   { path: 'map', component: GoogleMapComponent, resolve: { data: UserResolver}},
   { path: 'tabs', component: TabsComponent,  resolve: { data: UserResolver}},
- 
+  { path : 'edit', component : EditInfoComponent },
+
 ];

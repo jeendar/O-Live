@@ -36,6 +36,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BroadcastComponent } from './pages/broadcast/broadcast.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { NotifComponent } from './pages/notif/notif.component';
+import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
 
 
@@ -50,6 +51,7 @@ import { NotifComponent } from './pages/notif/notif.component';
     BroadcastComponent,
     TabsComponent,
     NotifComponent,
+    EditInfoComponent,
   ],
 
 

@@ -26,6 +26,7 @@ export class UserComponent implements OnInit{
     private location : Location,
     private fb: FormBuilder,
     private router: Router,
+    
   ) {
 
   }
