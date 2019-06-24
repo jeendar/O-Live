@@ -10,6 +10,13 @@
     <feature name="VideoStream">
         <param name="android-package" value="com.webmons.disono.rtmpandrtspstreamer.VideoStream" />
     </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>eventsMobileApp</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

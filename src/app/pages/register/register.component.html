@@ -8,37 +8,37 @@
    </div>
     <div class="card">
       <div style="text-align:center;">
-        <h1>Sign up</h1>
+        <h1>S'inscrire</h1>
       </div>
       <div class="lbl">
-          <label>Please fill in the following form in order to create your O'Live account.</label>
+          <label>SVP remplir le formulaire suivant pour créer votre compte O'Live.</label>
       </div>    
     <form [formGroup]="registerForm" class="form1">
 
         <div class="form-group">
-          <ons-input type="email" formControlName="email" class="npt form-control" placeholder="Type your e-mail here" required></ons-input>
+          <ons-input type="email" formControlName="email" class="npt form-control" placeholder="Tapez votre e-mail ici" required></ons-input>
         </div>
         <div class="form-group">
-          <div><ons-input  type="password" class="form-control npt" formControlName="password" placeholder="Type password here" required></ons-input></div>
+          <div><ons-input  type="password" class="form-control npt" formControlName="password" placeholder="Tapez votre mot de passe ici" required></ons-input></div>
           <label class="error">{{errorMessage}}</label>
           <label class="success">{{successMessage}}</label>
         </div>
         
-        <ons-button modifier="large" class="login-button" type="submit" (click)="tryRegister(registerForm.value)">Register</ons-button>
+        <ons-button modifier="large" class="login-button" type="submit" (click)="tryRegister(registerForm.value)">valider</ons-button>
 
      </form>       
     
      <div class="lbl">
-       - OR -
+       - OU -
      </div>
   <div class="socialLogin"style="text-align: center; margin: 10px auto;">
-    <ons-button  full class="google" modifier="large" (click)="tryGoogleLogin()" ><ons-icon  icon="md-google" style="margin-right: 12px;"></ons-icon> Sign up with Google   </ons-button >
+    <ons-button  full class="google" modifier="large" (click)="tryGoogleLogin()" ><ons-icon  icon="md-google" style="margin-right: 12px;"></ons-icon> Se connecter via Google   </ons-button >
   </div>
   <div class="socialLogin"style="text-align: center; margin: 10px auto;">
-    <ons-button  full class="facebook" modifier="large" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon>Sign up with Facebook</ons-button >
+    <ons-button  full class="facebook" modifier="large" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon> Se connecter via Facebook</ons-button >
   </div>
    <div style="text-align: center; margin: 10px;">
-    Already have an account? <a routerLink="/login">Login</a>
+    Vous avez déjà un compte? <a routerLink="/login">S'authentifier</a>
   </div>
     </div>
   </div>
