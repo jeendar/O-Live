@@ -35,7 +35,7 @@ export class GoogleMapComponent implements  AfterViewInit {
             navigator.geolocation.getCurrentPosition(position => {
               this.myLatLng = new googleMaps.LatLng( position.coords.latitude, position.coords.longitude);
               
-              console.log(this.myLatLng)
+              console.log(this.myLatLng);
 
               this.map = new googleMaps.Map(mapEl, {
                 center: this.myLatLng,
@@ -56,6 +56,7 @@ export class GoogleMapComponent implements  AfterViewInit {
               });
     
               this.markers = new googleMaps.Marker({
+                title: 'Vous êtes ici!',
                 map: this.map,
                 draggable: false,
                 position: this.myLatLng

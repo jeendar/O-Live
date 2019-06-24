@@ -6,17 +6,15 @@
   <div class="content" class="normal-page">
     <div style="text-align: center; margin: 10px">
         <div class="camera-view"><ons-icon class="camera-icon" icon="ion-android-camera"></ons-icon></div>
-       
-      <div class="card">
+
+        <ons-input placeholder="Titre de l'évènement"  (change)="fillStreaming(eventName);" [(ngModel)]="eventName" class="npt" requierd="true" ></ons-input>
+
         <div style="text-align: left; ">
-          <h4 style="font-weight:normal;">Veuillez sélectionnez la catégorie de l'évènement :</h4>          
+          <h4 style="font-weight:normal;">Veuillez selectionnez la catégorie de l'évènement :</h4>          
         </div>
-        
-        <ons-input placeholder="Titre"  class="npt" requierd="true" ></ons-input>
-        <ons-select class="select"  modifier="material">
-          <select class="select-input">
-            <option>Sélectionnez la catégorie</option>
-            <option>Arts, Musique, Cinéma</option>
+        <ons-select class="select"   modifier="material">
+          <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">
+            <option default>Arts, Musique, Cinéma</option>
             <option>Social</option>
             <option>Education, Conférence</option>
             <option>Informations internationales</option>
@@ -29,7 +27,7 @@
           </select>
         </ons-select>
         <ons-button modifier="large" type="submit" class="startbutton"  (click)="startStreaming()">Commencez le live!</ons-button>
-      </div>
+
     </div>
     <div>
 

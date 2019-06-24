@@ -38,6 +38,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { NotifComponent } from './pages/notif/notif.component';
 import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
 
   imports: [
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
