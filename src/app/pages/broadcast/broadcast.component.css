@@ -5,7 +5,7 @@
   text-align: center;
   background-color: hsl(0, 0%, 79%);
   display: table;
-  padding:100px 0;
+  padding:130px 0;
 }
 
 .camera-icon {
@@ -19,7 +19,12 @@
 .select{
   width:95%;
   background-color:#fff;
-  padding:10px;
+  margin:10px auto;
+}
+
+.npt{
+  width:95%;
+  font-size:14px;
   margin:10px auto;
 }
 
