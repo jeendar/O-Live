@@ -39,6 +39,7 @@ import { NotifComponent } from './pages/notif/notif.component';
 import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
 import {FormsModule} from "@angular/forms";
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 
 @NgModule({
@@ -63,9 +64,11 @@ import {FormsModule} from "@angular/forms";
     ReactiveFormsModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: false }),
     OnsenModule,
+    
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
+    AngularFireDatabaseModule,
 
     AgmCoreModule.forRoot({
       apiKey: environment.googleMapsKey

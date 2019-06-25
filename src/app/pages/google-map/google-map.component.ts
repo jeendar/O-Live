@@ -1,8 +1,14 @@
 import { Component, AfterViewInit,  Renderer2,
   ElementRef,
-  ViewChild} from '@angular/core';
+  ViewChild,
+  OnInit,
+  Inject} from '@angular/core';
 
+import { Router, Params } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
+import { StreamingService } from 'src/app/services/streaming.service';
+import { Streaming } from 'src/app/models/streaming.model';
+import { DOCUMENT } from '@angular/common';
 
 
 @Component({
@@ -10,21 +16,26 @@ import { AuthService } from '../../core/auth.service';
   templateUrl: './google-map.component.html',
   styleUrls: ['./google-map.component.css']
 })
-export class GoogleMapComponent implements  AfterViewInit {
+export class GoogleMapComponent implements  AfterViewInit, OnInit {
   @ViewChild("map") mapElementRef: ElementRef;
  
   map : any;
+  positionMarker: any;
   markers: any;
   subscription: any;
-  lat : number;
-  lng : number;
   selectedCoords: any;
   myLatLng : any;
+  streamings: Streaming[];
 
   constructor(
+    private streamingService: StreamingService,
     public authService: AuthService,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: any
     ) { }
+
+    ngOnInit(){
+    }
 
     ngAfterViewInit() {
       this.getGoogleMaps()
@@ -46,22 +57,51 @@ export class GoogleMapComponent implements  AfterViewInit {
                 this.renderer.addClass(mapEl, "visible");
               });
       
-              this.map.addListener("click", event => {
+             /* this.map.addListener("click", event => {
                 this.selectedCoords = {
                   lat: event.latLng.lat(),
                   lng: event.latLng.lng()
                 };
     
                 console.log("selectedCoords : " + this.selectedCoords.lat + " // " + this.selectedCoords.lng);
-              });
+              }); */
     
-              this.markers = new googleMaps.Marker({
-                title: 'Vous êtes ici!',
+              this.positionMarker = new googleMaps.Marker({
                 map: this.map,
                 draggable: false,
-                position: this.myLatLng
+                position: this.myLatLng,
+                title: 'Vous êtes ici!'
               });
 
+              this.streamingService.getStreamings().subscribe(data => {
+                this.streamings = data.map(e => {
+                  return {
+                    category: e.payload.doc.get('category'),
+                    eventName: e.payload.doc.get('eventName'),
+                    userEmail: e.payload.doc.get('userEmail'),
+                    userName: e.payload.doc.get('userName'),
+                    geoLoc: {
+                              lat : e.payload.doc.get('geoLoc.lat'),
+                              long: e.payload.doc.get('geoLoc.long')
+                            } 
+                  } as Streaming;
+                });
+                
+                for (let index = 0; index < this.streamings.length; index++) {
+                    this.markers = new googleMaps.Marker({
+                      map: this.map,
+                      draggable: false,
+                      position: {lat : this.streamings[index].geoLoc.lat, lng: this.streamings[index].geoLoc.long},
+                      title: this.streamings[index].eventName
+                    }); 
+                    
+                    this.markers.addListener("click", event => {
+                      console.log("click"+index);
+                      this.document.location.href = 'https://stream.mux.com/iCYj01LQF6JJzmsmv3aEqAxyKyxYrlMoS.m3u8';
+                    }); 
+                }
+                
+              });
            });
          }
         })

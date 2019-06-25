@@ -2,3 +2,10 @@
   width: 90%;
   padding-top: 7px;
 }
+
+.select{
+  width:95%;
+  background-color:#fff;
+  padding:10px;
+  margin:10px auto;
+}

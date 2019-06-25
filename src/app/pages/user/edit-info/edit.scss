@@ -85,15 +85,12 @@ $bkBtnSize: 52px;
     border-bottom: $bkBtnSize*0.25 solid transparent;
     border-right: $bkBtnSize*0.25 solid white;
   }
-  .bk-btn-bar {
-    position: relative;
-    background-color: white;
-    height: $bkBtnSize*0.15;
-    width: $bkBtnSize*0.25;
-    top: $bkBtnSize*-0.07;
-    left: $bkBtnSize*0.44;
-  }
+
 }
 .bkbtn{
   color: #fff;
+}
+
+.save{
+  background-color:#4483A0;
 }

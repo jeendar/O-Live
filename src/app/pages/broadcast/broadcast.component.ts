@@ -18,7 +18,7 @@ export class BroadcastComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.eventName="";
-    this.selectedOption = "Sélectionnez la catégorie";
+    this.selectedOption = "Arts, Musique, Cinéma";
   }
 
   ngAfterViewInit(): void {

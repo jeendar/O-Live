@@ -1,35 +1,34 @@
 <ons-page class="main_pages"  id="camera-page">
   <ons-toolbar style="background-color:#4483A0;border-color:#4483A0; color:#fff;">
-    <div class="left" class="bkbtn" ><ons-back-button   routerLink="/tabs" >Back</ons-back-button></div>
-
-    <div class="center"  style="color:#fff; ">Edit Info</div>
-  </ons-toolbar>
-  <div class="background"></div>
-  <div class="content" class="normal-page">
-    <div style="text-align: center; margin: 10px">
-        <div class="container-logo">
-            <img src="../../../assets/imgs/logoFull.png" height="120px" width="300px" />
-         </div>
-
-        <div class="card">
-          <div style="padding: 10px">
-            <ons-input icon="fa-file" placeholder="Entrez votre nom d'utilisateur" ></ons-input>
-          </div>
-          <div style="padding: 10px">
-              <div ><ons-input placeholder="Saisissez votre ancien mot de passe" ></ons-input></div>
-          </div>
-          <div style="padding: 10px">
-              <div ><ons-input placeholder="Saisissez votre nouveau mot de passe" ></ons-input></div>
-          </div>
-
-        <div style="text-align: right; margin: 10px;">
-            <ons-button >Valider</ons-button>
-          </div>
+   <div class="left"><div class="bk-btn" routerLink="/tabs"><div class="bk-btn-triangle"></div><div class="bk-btn-bar"></div></div></div>
+   <div class="center"  style="color:#fff; ">Modification de Profil</div>
+ </ons-toolbar>
+ <div class="background"></div>
+ <div class="content" class="normal-page">
+   <div style="text-align: center; margin: 10px">
+       <div class="container-logo">
+           <img src="../../../assets/imgs/logoFull.png" height="180px" width="300px" />
         </div>
 
-    </div>
-    <div>
+       <div class="card">
+         <div style="padding: 10px">
+           <ons-input icon="fa-file" placeholder="Entrez votre nom d'utilisateur" ></ons-input>
+         </div>
+         <div style="padding: 10px">
+             <div ><ons-input placeholder="Saisissez votre ancien mot de passe" ></ons-input></div>
+         </div>
+         <div style="padding: 10px">
+             <div ><ons-input placeholder="Saisissez votre nouveau mot de passe" ></ons-input></div>
+         </div>
 
-    </div>
-  </div>
+       <div style="text-align: right; margin: 10px;">
+         <ons-button modifier="large" style="background-color:#4483A0;" type="submit">Enregistrer</ons-button>
+         </div>
+       </div>
+
+   </div>
+   <div>
+
+   </div>
+ </div>
 </ons-page>
