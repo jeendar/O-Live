@@ -30,6 +30,11 @@
 <!-- ***INSERT GRAPHIC HERE (include hyperlink in image)***-->
 
 
+### About
+> O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase, AngularFire2 and Mux API.
+
+> The idea of the prject is to create a social networking application dedicated for live video broadcasting. a social media where you watch video broadcasts published by people from all around the globe. a social media where you can get a closer look on whatever is happenening in the world in real-time.
+
 
 
 ### Table of Contents
@@ -41,12 +46,6 @@
 - [Demo](#demo)
 - [screenshots](#screenshots)
 - [License](#license)
-
-
-### About
-> O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase, AngularFire2 and Mux API.
-
-> The idea of the prject is to create a social networking application dedicated for live video broadcasting. a social media where you watch video broadcasts published by people from all around the globe. a social media where you can get a closer look on whatever is happenening in the world in real-time.
 
 
 
