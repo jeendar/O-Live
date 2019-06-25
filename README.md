@@ -11,8 +11,8 @@
     <img src="https://i.imgur.com/T9s1C6e.png" alt="Logo" width="250" height="100">
   </a>
 
-  <h3 align="center">O'Live | a Video Broadcasting Social Network
-</h3>
+  <h2 align="center">O'Live | a Video Broadcasting Social Network
+</h2>
 
   <p align="center">
     a video broadcasting mobile application for Android & iOS
@@ -30,14 +30,14 @@
 <!-- ***INSERT GRAPHIC HERE (include hyperlink in image)***-->
 
 
-### About
+## About
 > O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase, AngularFire2 and Mux API.
 
 > The idea of the prject is to create a social networking application dedicated for live video broadcasting. a social media where you watch video broadcasts published by people from all around the globe. a social media where you can get a closer look on whatever is happenening in the world in real-time.
 
 
 
-### Table of Contents
+## Table of Contents
 
 - [About](#about)
 - [Installation](#installation)
@@ -49,7 +49,7 @@
 
 
 
-### Installation
+## Installation
 
 - Clone this repository  `git clone https://github.com/jeendar/O-Live.git`
     
@@ -61,18 +61,18 @@
 
 - run `ng serve` and open your browser on localhost:4200
 
-### Features
- * Create an account (Google and Facebook auth included).
+## Features
+ - Create an account (Google and Facebook auth included).
 
- * Broadcast live video from user's device camera.
+ - Broadcast live video from user's device camera.
 
- * Watch broadcasts published by other users.
+ - Watch broadcasts published by other users.
 
- * Search on the map for broadcasts from all users around the globe.
+ - Search on the map for broadcasts from all users around the globe.
 
- * Follow other users and get notified once a following user starts broadcasting.
+ - Follow other users and get notified once a following user starts broadcasting.
 
-### Built With
+## Built With
 
 Some of the major technologies used to bring this projet alive:
 * [Angular](https://angular.io/)
