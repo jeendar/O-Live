@@ -51,15 +51,15 @@
 
 ### Installation
 
-- Clone this repository 
-    >  git clone https://github.com/jeendar/O-Live.git
-- Open terminal and run 
-    >  npm install
+- Clone this repository  `git clone https://github.com/jeendar/O-Live.git`
+    
+- Open terminal and run `npm install`
+    
 - cd into the repository 
-    >  cd O-Live
+    
 - Open `environment/environment.ts` and paste your Firebase and Mux API configurations  
-- run `g serve` and open your browser on localhost:4200
-    >  ng serve
+
+- run `ng serve` and open your browser on localhost:4200
 
 ### Features
  * Create an account (Google and Facebook auth included).
