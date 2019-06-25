@@ -1,27 +1,47 @@
-# TestApp
+<a href="https://github.com/jeendar/O-Live"><img src="https://i.imgur.com/T9s1C6e.png" title="O'Live" alt="O'Live"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-## Development server
+<!-- ***INSERT GRAPHIC HERE (include hyperlink in image)***-->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# O'Live | a Video Broadcasting Mobile App
 
-## Code scaffolding
+> O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase and Mux API. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Table of Contents
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+- [Installation](#installation)
+- [Features](#features)
+- [Demo](#demo)
+- [License](#license)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Installation
 
-## Further help
+- clone this repository `git clone https://github.com/jeendar/O-Live.git`
+- run `npm install` 
+- cd into the repository `cd O-Live` 
+- run `ng serve` and open your browser on localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Features
+- Create an account (Google and Facebook auth included).
+- Broadcast live video from user's device camera.
+- Watch broadcasts published by other users.
+- Search on the map for broadcasts from all users around the globe.
+- Follow other users and get notified once a following user starts broadcasting.
+
+
+## Demo
+[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+
+
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2015 © <a href="https://github.com/jeendar/O-Live" target="_blank">O'Live</a>.
