@@ -40,6 +40,7 @@ import { EditInfoComponent } from './pages/user/edit-info/edit-info.component';
 
 import {FormsModule} from "@angular/forms";
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { SettingsComponent } from './pages/user/settings/settings.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     TabsComponent,
     NotifComponent,
     EditInfoComponent,
+    SettingsComponent,
   ],
 
 

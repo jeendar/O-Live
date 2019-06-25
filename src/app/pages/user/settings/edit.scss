@@ -1,0 +1,96 @@
+.header{
+  text-align: center;
+  font-size: 30px;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+.error{
+  color: red;
+}
+
+
+.lbl{
+  font-size:16px;
+  color:#555;
+  text-align:center;
+  margin:10px 0 20px 0;
+}
+
+.socialLogin {
+  margin: 20px auto;
+  width: 90%;
+}
+.form1{
+  width:90%;
+  margin:auto;
+}
+.form-group{
+  margin: 10px auto ;
+}
+
+.npt{
+  width:100%;
+  font-size:14px;
+  margin:10px auto;
+}
+
+.facebook{
+  background-color: #3b5998;
+
+}
+.google{
+  background-color: #d13d35;
+}
+
+.container-logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin:50px auto;
+  img {
+    max-width: 550px;
+  }
+}
+.form-bottom-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top:10px;
+}
+.form-bottom-text label,
+a {
+  color: #777;
+}
+ons-input {
+  width: 100%;
+}
+
+
+$bkBtnSize: 52px;
+.bk-btn {
+  height: $bkBtnSize;
+  width: $bkBtnSize;
+  background-color: #4483A0;
+  border-radius: 50%;
+  .bk-btn-triangle {
+    position: relative;
+    top: $bkBtnSize*0.25;
+    left: $bkBtnSize*0.2;
+    width: 0;
+    height: 0;
+    border-top: $bkBtnSize*0.25 solid transparent;
+    border-bottom: $bkBtnSize*0.25 solid transparent;
+    border-right: $bkBtnSize*0.25 solid white;
+  }
+
+}
+.bkbtn{
+  color: #fff;
+}
+
+.save{
+  background-color:#4483A0;
+}

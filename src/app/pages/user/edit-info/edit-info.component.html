@@ -1,31 +1,45 @@
 <ons-page class="main_pages"  id="camera-page">
   <ons-toolbar style="background-color:#4483A0;border-color:#4483A0; color:#fff;">
-   <div class="left"><div class="bk-btn" routerLink="/tabs"><div class="bk-btn-triangle"></div><div class="bk-btn-bar"></div></div></div>
-   <div class="center"  style="color:#fff; ">Modification de Profil</div>
+   <div class="left">
+     <div class="bk-btn" routerLink="/tabs">
+      <div class="bk-btn-triangle"></div>
+      <div class="bk-btn-bar"></div>
+    </div>
+  </div>
+   <div class="center"  style="margin-left:80px;color:#fff; ">Edit profil</div>
  </ons-toolbar>
  <div class="background"></div>
  <div class="content" class="normal-page">
    <div style="text-align: center; margin: 10px">
-       <div class="container-logo">
-           <img src="../../../assets/imgs/logoFull.png" height="180px" width="300px" />
-        </div>
-
+      <div style="text-align: center; margin: 10px">
+      </div>
+        <div><h3>Informations Personnelles</h3></div>
        <div class="card">
          <div style="padding: 10px">
-           <ons-input icon="fa-file" placeholder="Entrez votre nom d'utilisateur" ></ons-input>
+            <div ><h4 style="font-weight:bold;">Username</h4></div>
+           <ons-input icon="fa-file" placeholder="Changer votre nom d'utilisateur" ></ons-input>
          </div>
          <div style="padding: 10px">
-             <div ><ons-input placeholder="Saisissez votre ancien mot de passe" ></ons-input></div>
+            <div ><h4 style="font-weight:bold;">E-mail</h4></div>
+             <div ><ons-input placeholder="Changer votre e-mail" ></ons-input></div>
          </div>
          <div style="padding: 10px">
-             <div ><ons-input placeholder="Saisissez votre nouveau mot de passe" ></ons-input></div>
+            <div ><h4 style="font-weight:bold;">Bio</h4></div>
+             <div ><ons-input placeholder="Ajouter votre biographie" ></ons-input></div>
          </div>
-
+         <div style="padding: 10px">
+            <div ><h4 style="font-weight:bold;">Photo de profile</h4></div>
+             <div ><ons-input placeholder="URL Photo de profile" ></ons-input></div>
+         </div>
+        
+         
        <div style="text-align: right; margin: 10px;">
-         <ons-button modifier="large" style="background-color:#4483A0;" type="submit">Enregistrer</ons-button>
-         </div>
+          <ons-button modifier="large" style="background-color:#4483A0;" type="submit">Mettre à jour</ons-button>
+        </div>
        </div>
 
+
+    
    </div>
    <div>
 
