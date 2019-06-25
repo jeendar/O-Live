@@ -57,11 +57,15 @@
 - run `ng serve` and open your browser on localhost:4200
 
 ### Features
-- Create an account (Google and Facebook auth included).
-- Broadcast live video from user's device camera.
-- Watch broadcasts published by other users.
-- Search on the map for broadcasts from all users around the globe.
-- Follow other users and get notified once a following user starts broadcasting.
+ > Create an account (Google and Facebook auth included).
+
+ > Broadcast live video from user's device camera.
+
+ > Watch broadcasts published by other users.
+
+ > Search on the map for broadcasts from all users around the globe.
+
+ > Follow other users and get notified once a following user starts broadcasting.
 
 ### Built With
 
