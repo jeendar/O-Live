@@ -1,4 +1,4 @@
-<a href="https://github.com/jeendar/O-Live"><img src="https://i.imgur.com/T9s1C6e.png" title="O'Live" alt="O'Live"></a>
+<a href="https://github.com/jeendar/O-Live"><img src="https://i.imgur.com/T9s1C6e.png" title="O'Live" width="300px" alt="O'Live"></a>
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
@@ -14,7 +14,7 @@
 
 - [Installation](#installation)
 - [Features](#features)
-- [Demo](#demo)
+- [screenshots](#screenshots)
 - [License](#license)
 
 
@@ -34,8 +34,10 @@
 - Follow other users and get notified once a following user starts broadcasting.
 
 
-## Demo
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+## Screenshots
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/tGhYIze.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/1Sw3hkO.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/5mNEfZk.png)]()
 
 
 
