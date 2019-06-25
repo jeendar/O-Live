@@ -14,7 +14,7 @@
 
 - [Installation](#installation)
 - [Features](#features)
-- [Demo](#demo)
+- [screenshots](#screenshots)
 - [License](#license)
 
 
@@ -34,8 +34,10 @@
 - Follow other users and get notified once a following user starts broadcasting.
 
 
-## Demo
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+## Screenshots
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/tGhYIze.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/1Sw3hkO.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/5mNEfZk.png)]()
 
 
 
