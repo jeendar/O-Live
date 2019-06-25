@@ -1,11 +1,19 @@
 .search_box {
-  width: 90%;
+  width: 100%;
   padding-top: 7px;
 }
 
 .select{
+  width: 90%;
+
   width:95%;
-  background-color:#fff;
+  background-color:rgb(188, 215, 228);
   padding:10px;
-  margin:10px auto;
+  margin:10px auto;  color:#fff;
+
+}
+option{
+  color:#fff;
+  background-color:#4483A0;
+
 }

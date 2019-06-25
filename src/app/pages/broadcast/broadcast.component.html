@@ -6,11 +6,14 @@
   <div class="content" class="normal-page">
     <div style="text-align: center; margin: 10px">
         <div class="camera-view"><ons-icon class="camera-icon" icon="ion-android-camera"></ons-icon></div>
-
-        <ons-input placeholder="Titre de l'évènement"  (change)="fillStreaming(eventName);" [(ngModel)]="eventName" class="npt" requierd="true" ></ons-input>
+     
+        <div style="text-align: left; ">
+         <h4 style="font-weight:normal;">Titre de l'évènement</h4>   
+        </div>       
+        <ons-input placeholder="Entrer le titre de cet évènement"  (change)="fillStreaming(eventName);" [(ngModel)]="eventName" class="npt" requierd="true" ></ons-input>
 
         <div style="text-align: left; ">
-          <h4 style="font-weight:normal;">Veuillez selectionnez la catégorie de l'évènement :</h4>          
+          <h4 style="font-weight:normal;">Catégorie de l'évènement</h4>          
         </div>
         <ons-select class="select"   modifier="material">
           <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">

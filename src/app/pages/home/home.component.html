@@ -6,28 +6,30 @@
     <div class="content" class="initial-page">
         <br>
 
-        <ons-list-header><ons-search-input class="search_box"  placeholder="Search"></ons-search-input></ons-list-header>
-        <br>
+        <ons-list-header><ons-search-input class="search_box"  placeholder="Recherche"></ons-search-input></ons-list-header>
 
         <div style="text-align: left; ">
-          <h4 style="font-weight:normal;">Recherchez par la catégorie de l'évènement :</h4>          
+          <ons-list-header>
+              <h4 style="font-weight:normal;">Recherchez par la catégorie :</h4>  
+              <ons-select class="select"   modifier="material">
+                  <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">
+                    <option >Arts, Musique, Cinéma</option>
+                    <option>Social</option>
+                    <option>Education, Conférence</option>
+                    <option>Actualités internationales</option>
+                    <option>Actualités nationales</option>
+                    <option>IT, Informatique</option>
+                    <option>Litterature, Philosophie</option>
+                    <option>Science, L'espace</option>
+                    <option>Autres</option>
+                  </select>
+                </ons-select>
+              </ons-list-header>        
         </div>
-        <ons-select class="select"   modifier="material">
-          <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">
-            <option >Arts, Musique, Cinéma</option>
-            <option>Social</option>
-            <option>Education, Conférence</option>
-            <option>Actualités internationales</option>
-            <option>Actualités nationales</option>
-            <option>IT, Informatique</option>
-            <option>Litterature, Philosophie</option>
-            <option>Science, L'espace</option>
-            <option>Autres</option>
-          </select>
-        </ons-select>
+        
         <ons-list-item *ngFor="let streaming of streamings">
             <div class="left">
-                <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="https://i.imgur.com/yr4jePd.png" >
               </div>
               <div class="center">
                   <span class="list-item__title">{{streaming.userName}} <span class="list-item__subtitle">** {{streaming.eventName}}</span></span>
