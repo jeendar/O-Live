@@ -9,10 +9,11 @@
     <img src="https://i.imgur.com/T9s1C6e.png" alt="Logo" width="250" height="100">
   </a>
 
-  <h3 align="center">O'Live</h3>
+  <h3 align="center">O'Live | a Video Broadcasting Social Network
+</h3>
 
   <p align="center">
-    a video broadcasting mobile app for Android & iOS
+    a video broadcasting mobile application for Android & iOS
     <br />
     <a href="https://github.com/jeendar/O-Live">View Demo</a>
     ·
@@ -26,20 +27,24 @@
 
 <!-- ***INSERT GRAPHIC HERE (include hyperlink in image)***-->
 
-# O'Live | a Video Broadcasting Mobile App
 
-> O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase, AngularFire2 and Mux API 
-> 
 
 
 ### Table of Contents
 
-
+- [About](#about)
 - [Installation](#installation)
 - [Features](#features)
+- [Built With](#built-with)
 - [Demo](#demo)
 - [screenshots](#screenshots)
 - [License](#license)
+
+
+### About
+> O'Live is a Video Broadcasting Social Networking app created using Angular, OnsenUI, Cordova, Firebase, AngularFire2 and Mux API.
+
+> The idea of the prject is to create a social networking application dedicated for live video broadcasting. a social media where you watch video broadcasts published by people from all around the globe. a social media where you can get a closer look on whatever is happenening in the world in real-time.
 
 
 
@@ -57,6 +62,15 @@
 - Search on the map for broadcasts from all users around the globe.
 - Follow other users and get notified once a following user starts broadcasting.
 
+### Built With
+
+Some of the major technologies used to bring this projet alive:
+* [Angular](https://angular.io/)
+* [Firebase](https://firebase.google.com/docs/firestore)
+* [Mux API](https://mux.com/)
+* [OnsenUI](https://onsen.io)
+* [Apache Cordova](https://cordova.apache.org/)
+* [AngularFire2](https://github.com/angular/angularfire2)
 
 ### Demo
 
@@ -65,9 +79,6 @@
 [![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/tGhYIze.png)]()
 [![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/1Sw3hkO.png)]()
 [![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/5mNEfZk.png)]()
-
-### Built With
-
 
 
 ### License
