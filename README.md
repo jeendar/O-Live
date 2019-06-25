@@ -51,21 +51,26 @@
 
 ### Installation
 
-- clone this repository `git clone https://github.com/jeendar/O-Live.git`
-- run `npm install` 
-- cd into the repository `cd O-Live` 
-- run `ng serve` and open your browser on localhost:4200
+- Clone this repository 
+    >  git clone https://github.com/jeendar/O-Live.git
+- Open terminal and run 
+    >  npm install
+- cd into the repository 
+    >  cd O-Live
+- Open `environment/environment.ts` and paste your Firebase and Mux API configurations  
+- run `g serve` and open your browser on localhost:4200
+    >  ng serve
 
 ### Features
- > Create an account (Google and Facebook auth included).
+ * Create an account (Google and Facebook auth included).
 
- > Broadcast live video from user's device camera.
+ * Broadcast live video from user's device camera.
 
- > Watch broadcasts published by other users.
+ * Watch broadcasts published by other users.
 
- > Search on the map for broadcasts from all users around the globe.
+ * Search on the map for broadcasts from all users around the globe.
 
- > Follow other users and get notified once a following user starts broadcasting.
+ * Follow other users and get notified once a following user starts broadcasting.
 
 ### Built With
 
