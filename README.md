@@ -1,4 +1,4 @@
-<a href="https://github.com/jeendar/O-Live"><img src="https://i.imgur.com/T9s1C6e.png" title="O'Live" alt="O'Live"></a>
+<a href="https://github.com/jeendar/O-Live"><img src="https://i.imgur.com/T9s1C6e.png" title="O'Live" width="300px" alt="O'Live"></a>
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
