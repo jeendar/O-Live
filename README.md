@@ -14,6 +14,7 @@
 
 - [Installation](#installation)
 - [Features](#features)
+- [Demo](#demo)
 - [screenshots](#screenshots)
 - [License](#license)
 
@@ -32,6 +33,9 @@
 - Watch broadcasts published by other users.
 - Search on the map for broadcasts from all users around the globe.
 - Follow other users and get notified once a following user starts broadcasting.
+
+
+## Demo
 
 
 ## Screenshots
