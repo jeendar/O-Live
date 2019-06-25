@@ -86,7 +86,7 @@ Some of the major technologies used to bring this projet alive:
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="https://github.com/jeendar/O-Live" target="_blank">O'Live</a>.
+- Copyright 2019 © <a href="https://github.com/jeendar/O-Live" target="_blank">O'Live</a>.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
