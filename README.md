@@ -1,4 +1,3 @@
-[![Downloads Stats][npm-downloads]][npm-url]
 [![Build Status][build-shield]]()
 [![Contributors][contributors-shield]]()
 
@@ -103,6 +102,5 @@ Some of the major technologies used to bring this projet alive:
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://choosealicense.com/licenses/mit
 [product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
-
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
