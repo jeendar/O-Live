@@ -1,29 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  ViewChild,
-  OnsTab,
-  OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
-} from 'ngx-onsenui';
 import { StreamingService } from 'src/app/services/streaming.service';
 import { Streaming } from 'src/app/models/streaming.model';
+
 
 @Component({
   selector: 'ons-page[app-tab1]',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
   selectedOption: string;
   streamings: Streaming[];
-  streamingsByCat: Streaming[];
+  streamingsF: Array<Streaming>;
+  streamingsByCat: Array<Streaming>;
+  
 
-  constructor(private streamingService: StreamingService) { }
+  constructor(private streamingService: StreamingService) { 
+    this.streamingsByCat = new Array<Streaming>();
+    this.streamingsF = new Array<Streaming>();
+  }
 
   ngOnInit() {
-    this.selectedOption = "Arts, Musique, Cinéma";
+      this.getAllStreamings();
+}
 
+  getAllStreamings() {
     this.streamingService.getStreamings().subscribe(data => {
       this.streamings = data.map(e => {
         return {
@@ -37,11 +39,23 @@ export class HomeComponent implements OnInit {
                   } 
         } as Streaming;
       });
-  }); 
+      this.streamings.forEach((strm) => {
+           this.streamingsF.push(strm);            
+      });
+    });
+  
+  }
 
-  console.log(this.streamingService.getStreamingsByCategory('IT, Informatique'));
- 
-
-}
+  getStreamingsByCat(changedVal) {
+    this.streamings = [];
+    this.streamingsByCat = [];
+    this.streamingsF.forEach((strm) => {
+      if(changedVal === 'Sélectionner tout'){
+        this.getAllStreamings();
+      }else if(changedVal === strm.category){
+         this.streamingsByCat.push(strm);            
+      }
+    });
+  }
 
 }

@@ -12,7 +12,8 @@
           <ons-list-header>
               <h4 style="font-weight:normal;">Recherchez par la catégorie :</h4>  
               <ons-select class="select"   modifier="material">
-                  <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">
+                  <select class="select-input" [(ngModel)]="selectedOption" (change)="getStreamingsByCat(selectedOption);">
+                    <option >Sélectionner tout</option>
                     <option >Arts, Musique, Cinéma</option>
                     <option>Social</option>
                     <option>Education, Conférence</option>
@@ -39,6 +40,18 @@
                   <ons-toolbar-button ><ons-icon class="right" icon="ion-person-add"></ons-icon></ons-toolbar-button>
                 </div>
         </ons-list-item>
+        <ons-list-item *ngFor="let streaming of streamingsByCat">
+          <div class="left">
+              <img class="list-item__thumbnail" src="https://i.imgur.com/yr4jePd.png" >
+            </div>
+            <div class="center">
+                <span class="list-item__title">{{streaming.userName}} <span class="list-item__subtitle">** {{streaming.eventName}}</span></span>
+                <span class="list-item__subtitle">{{streaming.category}}</span>
+              </div>
+              <div class="right">
+                <ons-toolbar-button ><ons-icon class="right" icon="ion-person-add"></ons-icon></ons-toolbar-button>
+              </div>
+      </ons-list-item>
 
     </div>
     </ons-page>

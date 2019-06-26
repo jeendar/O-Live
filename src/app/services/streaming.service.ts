@@ -20,10 +20,4 @@ export class StreamingService {
     return this.firestore.collection('Streamings').snapshotChanges();
   }
 
-  getStreamingsByCategory(category : string) {
-    this.streamingsByCat = this.firestore.collection('Streamings', ref => ref.where('category','==', category )).valueChanges();
-
-    return this.streamingsByCat;
-  }
-
 }
