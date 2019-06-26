@@ -567,8 +567,8 @@ var BroadcastComponent = /** @class */ (function () {
         console.log("startStreaming !");
         this.saveStreaming();
          videoStreamer.streamRTMPAuth('rtmp://live.mux.com/app/28372226-3a35-bde4-3b8a-b70656dfd775',
-         src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].MUX_TOKEN_ID,
-         src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].MUX_TOKEN_SECRET,
+           src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].MUX_TOKEN_ID,
+           src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].MUX_TOKEN_SECRET,
            this.successStreaming, this.failedStreaming);
     };
     BroadcastComponent.prototype.failedStreaming = function (err) {
@@ -847,7 +847,7 @@ var HomeComponent = /** @class */ (function () {
         this.streamingsByCat = [];
         this.streamingsF.forEach(function (strm) {
             if (changedVal === 'Sélectionner tout') {
-                _this.getAllStreamings();
+                _this.streamings = _this.streamingsF;
             }
             else if (changedVal === strm.category) {
                 _this.streamingsByCat.push(strm);

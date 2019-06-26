@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     this.streamingsByCat = [];
     this.streamingsF.forEach((strm) => {
       if(changedVal === 'Sélectionner tout'){
-        this.getAllStreamings();
+        this.streamings = this.streamingsF;
       }else if(changedVal === strm.category){
          this.streamingsByCat.push(strm);            
       }
