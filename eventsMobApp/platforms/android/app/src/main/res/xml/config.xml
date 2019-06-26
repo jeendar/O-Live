@@ -17,7 +17,7 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <name>eventsMobileApp</name>
+    <name>O-Live</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
