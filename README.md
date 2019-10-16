@@ -41,7 +41,6 @@
 - [Installation](#installation)
 - [Features](#features)
 - [Built With](#built-with)
-- [Demo](#demo)
 - [screenshots](#screenshots)
 - [License](#license)
 
@@ -79,8 +78,6 @@ Some of the major technologies used to bring this projet alive:
 * [OnsenUI](https://onsen.io)
 * [Apache Cordova](https://cordova.apache.org/)
 * [AngularFire2](https://github.com/angular/angularfire2)
-
-### Demo
 
 
 ## Screenshots
