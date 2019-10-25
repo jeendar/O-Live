@@ -6,11 +6,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://i.imgur.com/T9s1C6e.png" alt="Logo" width="250" height="100">
+    <img src="https://i.imgur.com/T9s1C6e.png" alt="Logo" width="250" height="100" />
   </a>
 
-  <h2 align="center">O'Live | a Video Broadcasting Social Network
-</h2>
+  <h2 align="center">O'Live | a Video Broadcasting Social Network</h2>
 
   <p align="center">
     a video broadcasting mobile application for Android & iOS
